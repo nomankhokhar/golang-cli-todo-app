@@ -1,4 +1,5 @@
 ![Project Screenshot](./cli-image.PNG)
+![Project Screenshot](./cli-image-1.PNG)
 
 # Todo Application
 

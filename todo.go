@@ -20,6 +20,19 @@ type item struct {
 
 type Todos []item
 
+func (t *Todos) Add(task string) {
+
+	todo := item{
+		Task:        task,
+		Done:        false,
+		CreatedAt:   time.Now(),
+		CompletedAt: time.Time{},
+	}
+
+	*t = append(*t, todo)
+
+}
+
 func (t *Todos) Complete(index int) error {
 	ls := *t
 	if index <= 0 || index > len(ls) {
